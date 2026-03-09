@@ -612,11 +612,11 @@ right:40px;
 
     
       .hero_text{
-        max-width: 500px;
+        width: 100%;
     }
 
     .hero_text h1{
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .hero_text p {
@@ -778,9 +778,6 @@ right:40px;
 .province{
     display: block;
     padding: 60px 30px;
-}
-
-.province_text h1{
 }
 
 .province_text:not(:last-child)::after{
