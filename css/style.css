@@ -819,6 +819,9 @@ header nav ul{
     max-width: 90%;
 }
 
+.province_img img{
+    max-width: 90%;
+}
 
 .province_text{
     padding: 15px 0;
