@@ -820,14 +820,42 @@ header nav ul{
 
 .province{
     display: block;
+    padding: 30px 20px;
+}
+
+
+.province_text{
+    padding: 20px 0;
+    position: relative;
+}
+
+
+.province_text:not(:last-child)::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: var(--primario);
+    margin: 20px auto 0 auto;
+}
+
+
+.province_text h1{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.province_text p{
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 
 .about_block{
-        grid-template-columns: 1fr;
-        gap: 30px;
-        margin-bottom: 40px;
-    }
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
 
 .about_text{
     max-width: 100%;
