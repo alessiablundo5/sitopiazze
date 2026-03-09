@@ -625,8 +625,15 @@ right:40px;
 }
 
     .hero_text p {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-md);
     }
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 15px; 
+    overflow-x: auto; 
+}
    
     .card_contenitore{
         grid-template-columns:1fr;
