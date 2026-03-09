@@ -779,9 +779,11 @@ right:40px;
     display: block;
     padding: 60px 30px;
 }
+
 .province_text h1{
-    max-width: 300px;
+    max-width: 700px;
 }
+
 .province_text:not(:last-child)::after{
     content: "";
     position: absolute;
