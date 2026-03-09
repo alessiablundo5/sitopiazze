@@ -268,7 +268,8 @@ a:hover{
     font-weight: lighter;
     color:#E5AD76;
     font-family: var(--font-title);
-    margin: 100px 0 60px 0;
+    position: relative;
+    top: 30px;
     
 }
 
@@ -613,7 +614,11 @@ right:40px;
 *, *::before, *::after {
     box-sizing: border-box;
 }
-    
+
+.hero {
+    padding: 80px 15px; 
+}  
+
 .hero_text {
     max-width:70%;
     margin: 0 auto; 
@@ -626,12 +631,35 @@ right:40px;
     line-height: 1.2;
 }
 
-    .hero_text p {
-        font-size: var(--font-size-md);
-        margin-top: 5px;
-        margin-bottom:0;
-    }
+.cardhome h2{
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+}
 
+.hero_text p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 5px;
+}  
+
+    
+.info_text h1 {
+    font-size: 20px;
+}
+
+.info_text p {
+    font-size: var(--font-size-s);
+}
+
+.info_text h1::after {
+    width: 90%; 
+}
+
+.content_uno, .img, .about_block {
+    gap: 15px;
+}
+  
 nav ul {
     display: flex;
     flex-wrap: nowrap; 
@@ -844,45 +872,12 @@ nav ul {
 
 @media (max-width:400px) {
 
-    .hero {
-        padding: 80px 15px; 
-    }
+    
 
-    .hero_text h1 {
-        font-size: clamp(18px, 8vw, 28px); /* titolo ancora più piccolo se necessario */
-        line-height: 1.2;
-    }
+    
 
-    .hero_text p {
-        font-size: 14px;
-        line-height: 1.3;
-        margin-top: 5px;
-    }
+    
 
-    /* Info Section */
-    .info_text h1 {
-        font-size: 20px;
-    }
-
-    .info_text p {
-        font-size: 13px;
-    }
-
-    .info_text h1::after {
-        width: 90%; /* linea leggermente più larga per bilanciare */
-    }
-
-    /* Cardhome e Content */
-    .cardhome h2 {
-        font-size: 20px;
-        margin: 60px 0 40px 0;
-    }
-
-    .content_uno, .img, .about_block {
-        gap: 15px;
-    }
-
-    /* Banner */
     .banner {
         padding: 50px 15px;
     }
