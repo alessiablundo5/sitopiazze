@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piazza Garibaldi Caltanissetta</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <div class="textheader">
+        <p><a href="index.html">Pietre Sicule</a></p>
+        <nav>
+            <ul>
+                <li><a href = "province.html">provicie</a></li>
+                <li><a href = "piazze.html">piazze</a></li>
+                <li><a href = "about.html">chi siamo</a></li>
+            </ul>
+        </nav>
+        </div>
+   </header> 
+   <main>
+    <section class="hero hero_caltanissetta">
+    <div class="hero_text">
+      <h1>Piazza Garibaldi</h1>
+      <p>Caltanissetta</p>
+    </div>
+  </section>
+    <section class="content">
+        <div class="content_uno">
+            <div class="uno_img">
+                <img src="img/calta1.png" class="gallery">
+            </div>
+        <div class="uno_text">
+            <h1>la piazza, simbolo della città</h1>
+            <p>Piazza Garibaldi è il cuore storico e sociale della città di Caltanissetta,
+                un luogo dove storia, tradizione e vita quotidiana si incontrano in modo armonioso.
+                Ampia e accogliente, la piazza rappresenta uno dei punti più importanti della città
+                e un luogo di ritrovo per cittadini e visitatori. Qui si respira un’atmosfera autentica,
+                fatta di incontri, passeggiate e momenti di relax che raccontano la vita della comunità
+                nissena. Al centro della piazza domina la maestosa Cattedrale di Santa Maria la Nova,
+                principale edificio religioso della città.</p>
+            <p>La cattedrale, con la sua facciata elegante
+                e le sue decorazioni artistiche, rappresenta uno dei simboli più importanti di
+                Caltanissetta. Intorno alla piazza sorgono palazzi storici e edifici istituzionali
+                che testimoniano lo sviluppo urbano della città nel corso dei secoli. 
+                Le facciate chiare degli edifici e l’ampio spazio aperto creano un ambiente armonioso
+                e piacevole, ideale per ammirare l’architettura e l’atmosfera del centro storico.</p>
+        </div>    
+        </div>
+    <div class="img">
+        <img src="img/calta2.png" class="gallery">
+        <img src="img/calta3.png" class="gallery">
+    </div>
+        <div class="content_uno">
+        <div class="uno_text">
+            <h1>tra storia e tradizione</h1>
+            <p>La sera, le luci della piazza illuminano la cattedrale e gli edifici storici,
+                creando un’atmosfera suggestiva e accogliente.
+                Oltre ai monumenti principali, Piazza Garibaldi offre numerosi scorci caratteristici
+                che raccontano la storia e le tradizioni della città. Le strade che si diramano
+                dalla piazza conducono a piccoli negozi, botteghe e locali tipici, dove è
+                possibile scoprire i sapori e le tradizioni locali. Passeggiando nei dintorni si
+                possono osservare degli angoli nascosti che rendono questa zona
+                del centro storico particolarmente affascinante.</p>
+            <p> La piazza è anche un importante luogo di incontro per eventi culturali e manifestazioni
+                cittadine. Durante l’anno ospita celebrazioni religiose, feste tradizionali e
+                iniziative pubbliche che coinvolgono l’intera comunità. In queste occasioni Piazza Garibaldi si
+                trasforma in uno spazio vivace e partecipato, dove cittadini e visitatori condividono momenti di festa e tradizione.
+                Questo continuo alternarsi di quotidianità ed eventi rende la piazza uno dei luoghi più dinamici della città.
+                Infine, Piazza Garibaldi non è soltanto un luogo da visitare, ma uno spazio da vivere pienamente.</p>   
+               </div>
+            <div class="uno_img">
+                <img src="img/calta4.png" class="gallery">
+            </div>
+        </div>    
+    </section>
+     <section class="banner">
+  <div class="banner_container">
+
+    <div class="banner_title">
+      <h1>Non perderti più nessun articolo!</h1>
+    </div>
+
+    <div class="banner_content">
+
+      <div class="email_row">
+        <input type="email" placeholder="Inserisci qui la tua email">
+        <button type="button">Iscriviti</button>
+      </div>
+
+      <div class="banner_cond">
+        <label>
+          <input type="checkbox">
+          Accetto le condizioni di utilizzo di Pietre Sicule
+        </label>
+
+        <label>
+          <input type="checkbox">
+          Riconosco di aver letto l’informativa privacy di Pietre Sicule
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <footer>
+  <div class="footer_container">
+    <div class="footer_text">
+    <div class="colonna">
+        <h3>pietre sicule</h3>
+        <p>Progetto editoriale dedicato alla valorizzazione<br>
+        delle piazze storiche siciliane.</p>
+        <p>Racconta questi spazi come luoghi di identità,<br>
+          memoria e vita collettiva, con l’obiettivo di preservarne e
+          diffonderne la conoscenza.</p>
+      </div>
+      <div class="colonna">
+        <h3>contatti</h3>
+        <p>0932 239963</p>
+        <p>pietresicule@gmail.com</p>
+      </div>
+    <div class="colonna">
+        <h3>dove trovarci</h3>
+        <p>Via Etnea 33 - Catania (CT)</p>
+        <p>Via Roma - Ragusa (RG)</p>
+      </div>  
+      <div class="colonna">
+        <p>© 2026 Piazze di Sicilia<br>
+            Tutti i contenuti sono solo a scopo informativo.</p>
+    </div>
+    </div> 
+</footer>
+   </main>
+<div id="lightbox">
+  <span class="close">&times;</span>
+  <span class="arrow left">&#10094;</span>
+  <img id="lightbox-img">
+  <span class="arrow right">&#10095;</span>
+</div>
+
+<script>
+
+const images = document.querySelectorAll(".gallery");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+let index = 0;
+
+function showImage(i){
+    index = i;
+    lightboxImg.src = images[index].src;
+    lightbox.style.display = "flex";
+}
+
+function next(){
+    index = (index + 1) % images.length;
+    lightboxImg.src = images[index].src;
+}
+
+function prev(){
+    index = (index - 1 + images.length) % images.length;
+    lightboxImg.src = images[index].src;
+}
+
+images.forEach((img, i)=>{
+    img.addEventListener("click", ()=> showImage(i));
+});
+
+document.querySelector(".right").onclick = next;
+document.querySelector(".left").onclick = prev;
+
+document.querySelector(".close").onclick = ()=> lightbox.style.display="none";
+
+lightbox.addEventListener("click",(e)=>{
+if(e.target === lightbox){
+lightbox.style.display="none";
+}
+});
+
+document.addEventListener("keydown",(e)=>{
+
+if(lightbox.style.display === "flex"){
+
+if(e.key === "ArrowRight") next();
+
+if(e.key === "ArrowLeft") prev();
+
+if(e.key === "Escape") lightbox.style.display="none";
+
+}
+
+});
+
+</script>
+</body>
+</html>

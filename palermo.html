@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piazza San Domenico Palermo </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <div class="textheader">
+        <p><a href="index.html">Pietre Sicule</a></p>
+        <nav>
+            <ul>
+                <li><a href = "province.html">provicie</a></li>
+                <li><a href = "piazze.html">piazze</a></li>
+                <li><a href = "about.html">chi siamo</a></li>
+            </ul>
+        </nav>
+        </div>
+   </header> 
+   <main>
+    <section class="hero hero_palermo">
+    <div class="hero_text">
+      <h1>Piazza San Domenico</h1>
+      <p>Palermo</p>
+    </div>
+  </section>
+    <section class="content">
+        <div class="content_uno">
+            <div class="uno_img">
+                <img src="img/palermo1.png" class="gallery">
+            </div>
+        <div class="uno_text">
+            <h1>storia e architettura</h1>
+            <p>Piazza San Domenico è una delle piazze più affascinanti e significative
+              della città di Palermo, un luogo in cui storia, arte e vita urbana si incontrano
+              creando un’atmosfera ricca di fascino e memoria. Situata nel cuore del centro storico, 
+              lungo uno degli assi principali della città antica, la piazza rappresenta da secoli un 
+              importante punto di riferimento per la comunità palermitana e per i visitatori che 
+              desiderano scoprire il volto più autentico e monumentale della città.</p>
+            <p>Dominata 
+              dall’imponente presenza della Chiesa di San Domenico, uno dei più importanti edifici 
+              religiosi di Palermo, la piazza conserva ancora oggi il carattere solenne e 
+              rappresentativo che ha assunto nel corso della sua lunga storia.
+              Il grande spazio urbano si distingue per la sua eleganza e per l’armonia
+              architettonica che lo circonda. Al centro della piazza si erge il monumento dedicato 
+              all’ammiraglio Carlo V, mentre tutto intorno si affacciano palazzi storici che 
+              testimoniano il ruolo centrale che questo luogo ha avuto nella vita politica, 
+              religiosa e sociale della città.</p>
+        </div>    
+        </div>
+    <div class="img">
+        <img src="img/palermo2.png" class="gallery">
+        <img src="img/palermo3.png" class="gallery">
+    </div>
+        <div class="content_uno">
+        <div class="uno_text">
+            <h1>la piazza oggi</h1>
+            <p>Passeggiando nella piazza si percepisce chiaramente 
+              la stratificazione storica che caratterizza Palermo: epoche diverse convivono nello
+              stesso spazio, raccontando secoli di trasformazioni urbane, culturali e artistiche.
+              Piazza San Domenico è stata per lungo tempo un importante luogo di incontro e di scambio, 
+              frequentata da cittadini, commercianti e viaggiatori. Ancora oggi conserva una forte vitalità, 
+              grazie alla presenza di locali, caffè e attività che animano la zona durante tutto il giorno. </p>
+            <p>Nonostante il continuo movimento, la piazza mantiene un’atmosfera suggestiva e quasi 
+              monumentale, capace di trasmettere il senso della storia e dell’identità della città.
+              Visitare Piazza San Domenico significa immergersi in uno dei luoghi più 
+              rappresentativi di Palermo, dove la maestosità dell’architettura si unisce alla vita 
+              quotidiana del centro storico. Qui il passato e il presente convivono in equilibrio, 
+              offrendo a chi la attraversa uno spazio ricco di bellezza, cultura e memoria urbana.</p>   
+               </div>
+            <div class="uno_img">
+                <img src="img/palermo4.png" class="gallery">
+            </div>
+        </div>    
+    </section>
+     <section class="banner">
+  <div class="banner_container">
+
+    <div class="banner_title">
+      <h1>Non perderti più nessun articolo!</h1>
+    </div>
+
+    <div class="banner_content">
+
+      <div class="email_row">
+        <input type="email" placeholder="Inserisci qui la tua email">
+        <button type="button">Iscriviti</button>
+      </div>
+
+      <div class="banner_cond">
+        <label>
+          <input type="checkbox">
+          Accetto le condizioni di utilizzo di Pietre Sicule
+        </label>
+
+        <label>
+          <input type="checkbox">
+          Riconosco di aver letto l’informativa privacy di Pietre Sicule
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    <footer>
+  <div class="footer_container">
+    <div class="footer_text">
+    <div class="colonna">
+        <h3>pietre sicule</h3>
+        <p>Progetto editoriale dedicato alla valorizzazione<br>
+        delle piazze storiche siciliane.</p>
+        <p>Racconta questi spazi come luoghi di identità,<br>
+          memoria e vita collettiva, con l’obiettivo di preservarne e
+          diffonderne la conoscenza.</p>
+      </div>
+      <div class="colonna">
+        <h3>contatti</h3>
+        <p>0932 239963</p>
+        <p>pietresicule@gmail.com</p>
+      </div>
+    <div class="colonna">
+        <h3>dove trovarci</h3>
+        <p>Via Etnea 33 - Catania (CT)</p>
+        <p>Via Roma - Ragusa (RG)</p>
+      </div>  
+      <div class="colonna">
+        <p>© 2026 Piazze di Sicilia<br>
+            Tutti i contenuti sono solo a scopo informativo.</p>
+    </div>
+    </div> 
+</footer>
+   </main>
+   <div id="lightbox">
+  <span class="close">&times;</span>
+  <span class="arrow left">&#10094;</span>
+  <img id="lightbox-img">
+  <span class="arrow right">&#10095;</span>
+</div>
+
+<script>
+
+const images = document.querySelectorAll(".gallery");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+let index = 0;
+
+function showImage(i){
+    index = i;
+    lightboxImg.src = images[index].src;
+    lightbox.style.display = "flex";
+}
+
+function next(){
+    index = (index + 1) % images.length;
+    lightboxImg.src = images[index].src;
+}
+
+function prev(){
+    index = (index - 1 + images.length) % images.length;
+    lightboxImg.src = images[index].src;
+}
+
+images.forEach((img, i)=>{
+    img.addEventListener("click", ()=> showImage(i));
+});
+
+document.querySelector(".right").onclick = next;
+document.querySelector(".left").onclick = prev;
+
+document.querySelector(".close").onclick = ()=> lightbox.style.display="none";
+
+lightbox.addEventListener("click",(e)=>{
+if(e.target === lightbox){
+lightbox.style.display="none";
+}
+});
+
+document.addEventListener("keydown",(e)=>{
+
+if(lightbox.style.display === "flex"){
+
+if(e.key === "ArrowRight") next();
+
+if(e.key === "ArrowLeft") prev();
+
+if(e.key === "Escape") lightbox.style.display="none";
+
+}
+
+});
+
+</script>
+</body>
+</html>

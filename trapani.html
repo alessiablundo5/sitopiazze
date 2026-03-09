@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piazza Mercato del Pesce Trapani </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <div class="textheader">
+        <p><a href="index.html">Pietre Sicule</a></p>
+        <nav>
+            <ul>
+                <li><a href = "province.html">provicie</a></li>
+                <li><a href = "piazze.html">piazze</a></li>
+                <li><a href = "about.html">chi siamo</a></li>
+            </ul>
+        </nav>
+        </div>
+   </header> 
+   <main>
+    <section class="hero hero_trapani">
+    <div class="hero_text">
+      <h1>Piazza Mercato del Pesce</h1>
+      <p>Trapani</p>
+    </div>
+  </section>
+    <section class="content">
+        <div class="content_uno">
+            <div class="uno_img">
+                <img src="img/trapani1.png" class="gallery">
+            </div>
+        <div class="uno_text">
+            <h1>il cuore del mercato del pesce di Trapani</h1>
+            <p>Piazza del Mercato del Pesce è uno dei luoghi più caratteristici e vivaci della città
+              di Trapani, un punto in cui tradizione marinara, storia e vita quotidiana si incontrano
+              creando un’atmosfera unica. Situata nel cuore del centro storico, vicino al porto,
+              la piazza rappresenta da secoli un importante punto di riferimento per la comunità
+              locale e per i visitatori che desiderano scoprire l’anima più autentica.</p>
+            <p>Al centro della piazza si svolge ancora oggi il tradizionale mercato
+              del pesce, uno dei più antichi e suggestivi della Sicilia. Fin dalle
+              prime ore del mattino pescatori e venditori espongono il pescato del giorno:
+              tonni, gamberi, seppie, ricci di mare e molte altre specialità del Mediterraneo.
+              Il mercato è un vero spettacolo di colori, profumi e suoni, dove il vociare dei venditori
+              e il movimento dei clienti creano un’atmosfera dinamica e autentica. Attorno alla piazza
+              si affacciano edifici storici e palazzi dalle facciate chiare, tipiche dell’architettura
+              rapanese, che riflettono la luce del sole e contribuiscono a rendere lo spazio luminoso
+              e accogliente.</p>
+        </div>    
+        </div>
+    <div class="img">
+        <img src="img/trapani2.png" class="gallery">
+        <img src="img/trapani3.png" class="gallery">
+    </div>
+        <div class="content_uno">
+        <div class="uno_text">
+            <h1>tradizione marinara e vita cittadina</h1>
+            <p>Oltre alla sua funzione commerciale, la piazza offre numerosi scorci pittoreschi
+              che raccontano la storia del quartiere marinaro. Le strade che si diramano
+              intorno conducono a vicoli stretti, piccole botteghe e ristoranti tipici dove è
+              possibile assaporare piatti tradizionali a base di pesce fresco. Passeggiando nei d
+              intorni si possono osservare dettagli architettonici, balconi decorati e
+              angoli suggestivi che rivelano il fascino del centro storico di Trapani.
+              La piazza è anche un luogo di incontro e di socialità per i cittadini.
+              Durante l’anno ospita eventi, manifestazioni culturali e iniziative legate
+              alla tradizione marinara della città.</p>
+            <p>In queste occasioni lo spazio si anima di musica,
+              profumi di cucina locale e momenti di condivisione che coinvolgono residenti e turisti.
+              Questo continuo alternarsi tra attività quotidiane e momenti di festa rende Piazza del
+              Mercato del Pesce uno dei luoghi più dinamici e rappresentativi della vita trapanese.
+              La piazza non è soltanto un mercato o un luogo da visitare,
+              ma uno spazio da vivere.</p>   
+               </div>
+            <div class="uno_img">
+                <img src="img/trapani4.png" class="gallery">
+            </div>
+        </div>    
+    </section>
+     <section class="banner">
+  <div class="banner_container">
+
+    <div class="banner_title">
+      <h1>Non perderti più nessun articolo!</h1>
+    </div>
+
+    <div class="banner_content">
+
+      <div class="email_row">
+        <input type="email" placeholder="Inserisci qui la tua email">
+        <button type="button">Iscriviti</button>
+      </div>
+
+      <div class="banner_cond">
+        <label>
+          <input type="checkbox">
+          Accetto le condizioni di utilizzo di Pietre Sicule
+        </label>
+
+        <label>
+          <input type="checkbox">
+          Riconosco di aver letto l’informativa privacy di Pietre Sicule
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<footer>
+  <div class="footer_container">
+    <div class="footer_text">
+    <div class="colonna">
+        <h3>pietre sicule</h3>
+        <p>Progetto editoriale dedicato alla valorizzazione<br>
+        delle piazze storiche siciliane.</p>
+        <p>Racconta questi spazi come luoghi di identità,<br>
+          memoria e vita collettiva, con l’obiettivo di preservarne e
+          diffonderne la conoscenza.</p>
+      </div>
+      <div class="colonna">
+        <h3>contatti</h3>
+        <p>0932 239963</p>
+        <p>pietresicule@gmail.com</p>
+      </div>
+    <div class="colonna">
+        <h3>dove trovarci</h3>
+        <p>Via Etnea 33 - Catania (CT)</p>
+        <p>Via Roma - Ragusa (RG)</p>
+      </div>  
+      <div class="colonna">
+        <p>© 2026 Piazze di Sicilia<br>
+            Tutti i contenuti sono solo a scopo informativo.</p>
+    </div>
+    </div> 
+</footer>
+   </main>
+<div id="lightbox">
+  <span class="close">&times;</span>
+  <span class="arrow left">&#10094;</span>
+  <img id="lightbox-img">
+  <span class="arrow right">&#10095;</span>
+</div>
+
+<script>
+
+const images = document.querySelectorAll(".gallery");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+let index = 0;
+
+function showImage(i){
+    index = i;
+    lightboxImg.src = images[index].src;
+    lightbox.style.display = "flex";
+}
+
+function next(){
+    index = (index + 1) % images.length;
+    lightboxImg.src = images[index].src;
+}
+
+function prev(){
+    index = (index - 1 + images.length) % images.length;
+    lightboxImg.src = images[index].src;
+}
+
+images.forEach((img, i)=>{
+    img.addEventListener("click", ()=> showImage(i));
+});
+
+document.querySelector(".right").onclick = next;
+document.querySelector(".left").onclick = prev;
+
+document.querySelector(".close").onclick = ()=> lightbox.style.display="none";
+
+lightbox.addEventListener("click",(e)=>{
+if(e.target === lightbox){
+lightbox.style.display="none";
+}
+});
+
+document.addEventListener("keydown",(e)=>{
+
+if(lightbox.style.display === "flex"){
+
+if(e.key === "ArrowRight") next();
+
+if(e.key === "ArrowLeft") prev();
+
+if(e.key === "Escape") lightbox.style.display="none";
+
+}
+
+});
+
+</script>
+</body>
+</html>
