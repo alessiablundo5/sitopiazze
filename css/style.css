@@ -817,7 +817,7 @@ nav ul {
 }
 
 .province_text{
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .province_text:not(:last-child)::after{
