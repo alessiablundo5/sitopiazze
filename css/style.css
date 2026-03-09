@@ -612,7 +612,7 @@ right:40px;
 
     
       .hero_text{
-        width: 100%;
+        max-width: 500px;
     }
 
     .hero_text h1{
