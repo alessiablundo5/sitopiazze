@@ -610,6 +610,9 @@ right:40px;
 
 @media (max-width:600px){
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
     
 .hero_text {
     width: 90%;
