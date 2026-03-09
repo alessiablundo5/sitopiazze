@@ -620,7 +620,7 @@ right:40px;
 }  
 
 .hero_text {
-    max-width:70%;
+    max-width:90%;
     margin: 0 auto; 
     padding: 0 10px;
     text-align: center;
@@ -632,9 +632,7 @@ right:40px;
 }
 
 .cardhome h2{
-    position: relative;
-    top: 50px;
-    font-size: 20px;
+    margin-top: 50px;
 }
 
 .hero_text p {
@@ -644,7 +642,9 @@ right:40px;
 }  
 
     
-.info_text h1 {
+.info_text h1,
+.banner_title h1,
+.cardhome h2{
     font-size: 20px;
 }
 
@@ -745,9 +745,6 @@ header nav ul{
     gap:40px;
 }
 
-.email_row input, .email_row button {
-    font-size: 14px;
-}
 
 .footer_container{
     padding: 40px 15px;
@@ -867,7 +864,7 @@ header nav ul{
 }
 
 .content_about{
-    padding: 60px 30px;
+    padding: 40px 20px;
 }
 
 .arrow{
