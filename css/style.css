@@ -616,13 +616,12 @@ right:40px;
     
 .hero_text {
     width: 90%;
-    margin: 0 auto;
-    padding: 10px; 
+    margin: 0 auto; 
     text-align: center;
 }
 
 .hero_text h1 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.3; 
     word-break: break-word;
 }
@@ -634,7 +633,7 @@ right:40px;
 nav ul {
     display: flex;
     flex-wrap: nowrap; 
-    gap: 15px; 
+    gap: 10px; 
     overflow-x: auto; 
 }
    
@@ -665,10 +664,13 @@ nav ul {
         gap:30px;
     }
 
-    
     .info_text{
         order:1;
         max-width:100%;
+    }
+
+    .info_text h1{
+        width: 100%;
     }
 
     .info_img{
