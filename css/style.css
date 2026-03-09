@@ -820,7 +820,6 @@ header nav ul{
 
 .province{
     display: block;
-    padding: 40px 20px;
 }
 
 
@@ -830,30 +829,30 @@ header nav ul{
         margin-bottom: 40px;
     }
 
-    .about_text{
-        max-width: 100%;
+.about_text{
+    max-width: 100%;
+}
+
+.about_img img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.content_about{
+    padding: 60px 30px;
+}
+
+.arrow{
+    font-size: 30px;
+}
+
+.left{
+     left:20px;
     }
 
-    .about_img img{
-        max-width: 100%;
-        border-radius: 10px;
-    }
-
-    .content_about{
-        padding: 60px 30px;
-    }
-
-    .arrow{
-        font-size: 30px;
-    }
-
-    .left{
-        left:20px;
-    }
-
-    .right{
-        right:20px;
-    }
+.right{
+    right:20px;
+}
 }
 
 
