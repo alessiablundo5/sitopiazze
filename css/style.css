@@ -816,6 +816,10 @@ nav ul {
     padding: 40px 20px;
 }
 
+.province_text{
+    max-width: 90%;
+}
+
 .province_text:not(:last-child)::after{
     content: "";
     position: absolute;
