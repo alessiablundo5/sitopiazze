@@ -628,6 +628,8 @@ right:40px;
 
     .hero_text p {
         font-size: var(--font-size-md);
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
 nav ul {
