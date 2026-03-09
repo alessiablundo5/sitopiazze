@@ -661,6 +661,7 @@ right:40px;
 }
 
 header nav {
+    font-size: var(--font-size-base);
     max-width: 100%;
     overflow-x: auto;
 }
