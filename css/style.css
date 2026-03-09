@@ -732,7 +732,6 @@ header nav ul{
 }
 
 .banner_title h1 {
-    font-size: 20px;
     text-align: center;
 }
 
@@ -804,7 +803,6 @@ header nav ul{
 }
 
 .uno_text h1{
-    font-size:22px;
     line-height:1.2;
     margin-bottom:10px;
 }
@@ -839,6 +837,7 @@ header nav ul{
 
 
 .province_text h1{
+    font-size: 20px;
     margin-bottom: 8px;
 }
 
