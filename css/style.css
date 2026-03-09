@@ -611,13 +611,18 @@ right:40px;
 @media (max-width:600px){
 
     
-      .hero_text{
-        width: 100%;
-    }
+.hero_text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px; 
+    text-align: center;
+}
 
-    .hero_text h1{
-        font-size: 30px;
-    }
+.hero_text h1 {
+    font-size: 28px;
+    line-height: 1.3; 
+    word-break: break-word; 
+}
 
     .hero_text p {
         font-size: var(--font-size-lg);
