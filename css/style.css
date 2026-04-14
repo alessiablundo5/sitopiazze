@@ -1,7 +1,7 @@
 :root {
     --primario: #e5ad76b2;
-    --secondario:#BED2FE;
-    --secondario2:#bed2fecc;
+    --secondario:#6f472d;
+    --secondario2:#d8d7d7bb;
     --text:#010905;
     --sfondo-1:#F5F5F5;
     --bianco:#fff;
@@ -16,7 +16,7 @@
 
     --font-base: 'helvetica', sans-serif;
     --font-title: 'Times New Roman', Times, serif;
-    --font-size-base: 11px;
+    --font-size-base: 12px;
     --font-size-s: 14px;
     --font-size-md: 18px;
     --font-size-lg:24px;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 header{
     max-width: 100%;
-    background-color:#BED2FE;
+    background-color:var(--secondario2);
     text-transform: uppercase;
 }
 
@@ -74,7 +74,8 @@ header nav ul{
 }
 
 a{
-    color:#325474;
+    color:#777777;
+
     text-decoration: none;
     font-weight:500;
 
@@ -324,12 +325,14 @@ a:hover{
     display: inline-block;
     margin-top: 25px;
     text-transform: uppercase;
-    color:#E5AD76;
+    color:#ffffff;
+    background-color: var(--primario);
+    padding: 10px;
+    border-radius:6px;
+    cursor: pointer;
 }
 
-.info_text a:hover{
-    color:#6f472d;
-}
+
 
 .contenitore{
     display: flex;
@@ -373,7 +376,7 @@ a:hover{
 }
 
 .banner{
-    background: var(--secondario);
+    background: #e5ad76b0;
     padding:100px 0;
 }
 
@@ -404,7 +407,7 @@ a:hover{
     align-items:center;
     gap:20px;
     padding-bottom:10px;
-    border-bottom:1px solid var(--bianco);
+    border-bottom:1px solid #010905;
     margin-bottom:25px;
 }
 
@@ -422,7 +425,7 @@ a:hover{
 }
 
 .email_row button{
-    background:var(--primario); 
+    background:var(--secondario); 
     color: var(--bianco);
     border: none;
     padding: 10px 20px;
@@ -434,7 +437,7 @@ a:hover{
 }
 
 .email_row button:hover{
-    background:#6f472d;
+    background:var(--secondario2)
 }
 
 .banner_cond{
@@ -454,7 +457,7 @@ a:hover{
     appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid var(--primario);
+    border: 2px solid var(--secondario);
     border-radius: 2px;
     background: transparent;
     cursor: pointer;
