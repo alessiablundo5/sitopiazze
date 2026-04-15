@@ -1,7 +1,8 @@
 :root {
     --primario: #e5ad76b2;
+    --primario2:#E5AD76;
     --secondario:#6f472d;
-    --secondario2:#d8d7d7bb;
+    --secondario2:#b3b3b3bb;
     --text:#010905;
     --sfondo-1:#F5F5F5;
     --bianco:#fff;
@@ -15,7 +16,7 @@
     --space-2xl:192px;
 
     --font-base: 'helvetica', sans-serif;
-    --font-title: 'Times New Roman', Times, serif;
+    --font-title: 'playfair display', 'serif';
     --font-size-base: 12px;
     --font-size-s: 14px;
     --font-size-md: 18px;
@@ -43,9 +44,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     display: block;
 }
 
+
 header{
     max-width: 100%;
-    background-color:var(--secondario2);
+    background-color: #bfbebebb;
     text-transform: uppercase;
 }
 
@@ -74,28 +76,33 @@ header nav ul{
 }
 
 a{
-    color:#777777;
-
+    color:#000000;
     text-decoration: none;
     font-weight:500;
 
 }
 
-a:hover{
-    color:#0f1a23;
+nav ul a:hover{
+    color: #585858;
 }
 
-.text a{
+ .text a,
+ .card_item .card_button {
     text-decoration: none;
-    font-weight:500;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: var(--font-size-base);
     position: relative;
-    top: 10px;
-    color: var(--primario);
+    top: 5px;
+    color: var(--bianco);
+    padding: 10px 15px;
+    background-color: var(--primario2);
+    border-radius: 8px;
+    display: inline-block;
 }
 
-.text a:hover{
+.text a:hover,
+.card_item .card_button:hover {
     color: #6f472d;
 }
 
@@ -208,7 +215,7 @@ a:hover{
 .content{
     max-width:var(--container-width);
     margin:0 auto;
-    padding:var(--space-xl);
+    padding:128px 128px 0 128px;
 }
 
 .content_uno{
@@ -267,15 +274,16 @@ a:hover{
     font-size: var(--font-size-lg);
     text-transform: uppercase;
     font-weight: lighter;
-    color:#E5AD76;
+    color:var(--primario2);
     font-family: var(--font-title);
     position: relative;
-    top: 30px;
+    padding-bottom: 60px;
+    
     
 }
 
 .card_contenitore{
-    margin-top: var(--space-xl);
+   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -285,15 +293,23 @@ a:hover{
     background: var(--sfondo-1);
     padding: 10px 10px 20px 10px;
     border-bottom: 1px solid #010905;
+    display: block;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.card_item:hover {
+  cursor: pointer;
 }
 
 .text h1{
     max-width: 280px;
     padding-top: 15px;
+
 }
 .text p{
     font-size:var(--font-size-base);
-    padding: 15px 0;
+    padding: 15px 0 25px 0;
 }
 .card_img{
     position:relative
@@ -325,11 +341,16 @@ a:hover{
     display: inline-block;
     margin-top: 25px;
     text-transform: uppercase;
+    font-weight: 600;
     color:#ffffff;
-    background-color: var(--primario);
-    padding: 10px;
-    border-radius:6px;
-    cursor: pointer;
+    background-color: var(--primario2);
+    padding: 10px 15px;
+    border-radius:8px;
+    font-size: var(--font-size-base);
+}
+
+.info_text a:hover{
+    color: #6f472d;
 }
 
 
